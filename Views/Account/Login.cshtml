@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Login";
+
+}
+@*<form action="Verify" method="post">
+    <input type="text" name="Name" placeholder="type your username"/>
+<input type="password" name="Password" placeholder="type your password"/>
+  <input type="submit" value="Login"/>
+</form>*@
+
+<form action="Verify" method="post">
+  <div class="form-group">
+    <label for="Name">User Name</label>
+    <input type="text" id="Name" name="Name"  class="form-control"  >
+    
+  </div>
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="Password" id="Password"name="Password" class="form-control" >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
